@@ -1,0 +1,389 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#100b20">
+
+  <title>RadheSaritaVerse | Welcome to My World</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #100b20;
+      color: #fff;
+      line-height: 1.7;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .container {
+      width: min(1100px, 90%);
+      margin: auto;
+    }
+
+    header {
+      background: #100b20;
+      border-bottom: 1px solid #34234e;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    nav {
+      min-height: 76px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .logo {
+      color: #e1c4ff;
+      font-size: 1.4rem;
+      font-weight: bold;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 22px;
+      list-style: none;
+    }
+
+    .nav-links a:hover {
+      color: #d4a5ff;
+    }
+
+    .hero {
+      min-height: 570px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 80px 0;
+      background:
+        radial-gradient(
+          circle at 85% 30%,
+          #482568 0,
+          transparent 40%
+        );
+    }
+
+    .eyebrow {
+      color: #e1b8ff;
+      letter-spacing: 3px;
+      font-size: 0.8rem;
+      font-weight: bold;
+    }
+
+    h1 {
+      font-size: clamp(2.5rem, 7vw, 5rem);
+      line-height: 1.15;
+      margin: 20px 0;
+    }
+
+    h1 span {
+      color: #d4a5ff;
+    }
+
+    .hero p {
+      max-width: 600px;
+      color: #d0c6df;
+      margin-bottom: 28px;
+    }
+
+    .btn {
+      display: inline-block;
+      background: #9148cf;
+      color: #fff;
+      padding: 12px 22px;
+      border: none;
+      border-radius: 9px;
+      cursor: pointer;
+      font-size: 1rem;
+      font-weight: bold;
+      transition: 0.2s;
+    }
+
+    .btn:hover {
+      background: #a65ce5;
+      transform: translateY(-2px);
+    }
+
+    section {
+      padding: 75px 0;
+      scroll-margin-top: 75px;
+    }
+
+    .section-title {
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+
+    .section-intro {
+      color: #c5b8d5;
+      margin-bottom: 30px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 22px;
+    }
+
+    .card {
+      padding: 28px;
+      background: #1c1430;
+      border: 1px solid #3a2854;
+      border-radius: 16px;
+    }
+
+    .emoji {
+      font-size: 2.2rem;
+      margin-bottom: 10px;
+    }
+
+    .card h3 {
+      margin-bottom: 10px;
+      color: #f0dcff;
+    }
+
+    .card p {
+      color: #cbbfda;
+    }
+
+    .projects {
+      background: #160f27;
+    }
+
+    .tag {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 4px 12px;
+      background: #34204b;
+      color: #e0baff;
+      border-radius: 20px;
+      font-size: 0.85rem;
+    }
+
+    .contact-box {
+      padding: 35px;
+      background: linear-gradient(135deg, #382052, #1c1430);
+      border: 1px solid #56366e;
+      border-radius: 18px;
+    }
+
+    .contact-box p {
+      color: #ded0eb;
+      margin: 12px 0 22px;
+    }
+
+    #helloMessage {
+      margin-bottom: 0;
+    }
+
+    footer {
+      padding: 25px 0;
+      border-top: 1px solid #34234e;
+      text-align: center;
+      color: #b9a9ca;
+    }
+
+    @media (max-width: 650px) {
+      nav {
+        padding: 15px 0;
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+      .nav-links {
+        gap: 15px;
+        flex-wrap: wrap;
+        font-size: 0.9rem;
+      }
+
+      .hero {
+        min-height: 450px;
+      }
+
+      .grid {
+        grid-template-columns: 1fr;
+      }
+
+      .contact-box {
+        padding: 24px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <header>
+    <nav class="container">
+      <a href="#home" class="logo">
+        ✨ RadheSaritaVerse
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- Home -->
+    <section class="hero container" id="home">
+      <div class="eyebrow">WELCOME TO MY WORLD</div>
+
+      <h1>
+        Welcome to<br>
+        <span>RadheSaritaVerse.</span>
+      </h1>
+
+      <p>
+        A little corner of the internet filled with creativity,
+        inspiration, technology, and new ideas.
+        Explore my world and discover something wonderful.
+      </p>
+
+      <a href="#about" class="btn">
+        Explore My World ↗
+      </a>
+    </section>
+
+    <!-- About -->
+    <section id="about">
+      <div class="container">
+        <h2 class="section-title">About RadheSaritaVerse</h2>
+
+        <p class="section-intro">
+          Every great journey starts with a small idea.
+          This is where my journey begins.
+        </p>
+
+        <div class="grid">
+          <article class="card">
+            <div class="emoji">🌸</div>
+            <h3>My Universe</h3>
+            <p>
+              Welcome to RadheSaritaVerse, my personal space
+              to share ideas, interests, creativity, and
+              the things that inspire me.
+            </p>
+          </article>
+
+          <article class="card">
+            <div class="emoji">🚀</div>
+            <h3>My Interests</h3>
+            <p>
+              I enjoy exploring technology, learning coding,
+              discovering new ideas, and creating things
+              that I can share with the world.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="projects" id="projects">
+      <div class="container">
+        <h2 class="section-title">My Projects</h2>
+
+        <p class="section-intro">
+          Ideas today, creations tomorrow.
+        </p>
+
+        <div class="grid">
+          <article class="card">
+            <div class="emoji">🌐</div>
+            <h3>My First Website</h3>
+            <p>
+              RadheSaritaVerse is my first step into
+              the world of web development using HTML,
+              CSS, and JavaScript.
+            </p>
+            <span class="tag">Web Development</span>
+          </article>
+
+          <article class="card">
+            <div class="emoji">💡</div>
+            <h3>More Coming Soon</h3>
+            <p>
+              This space is ready for future ideas,
+              experiments, and exciting new projects.
+            </p>
+            <span class="tag">Future Projects</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+      <div class="container">
+        <div class="contact-box">
+          <h2 class="section-title">Let's Connect</h2>
+
+          <p>
+            Thank you for visiting RadheSaritaVerse.
+            Click below to leave a little positivity in your day!
+          </p>
+
+          <button class="btn" id="helloBtn">
+            Send Some Positivity ✨
+          </button>
+
+          <p id="helloMessage" aria-live="polite"></p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>
+        © <span id="year"></span> RadheSaritaVerse.
+        Made with ❤️ and code.
+      </p>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    document.getElementById("year").textContent =
+      new Date().getFullYear();
+
+    document.getElementById("helloBtn").addEventListener(
+      "click",
+      function () {
+        document.getElementById("helloMessage").textContent =
+          "May your day be filled with happiness, peace, and positivity! ✨";
+      }
+    );
+  </script>
+
+</body>
+</html>
